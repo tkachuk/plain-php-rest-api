@@ -1,5 +1,7 @@
 ### Run application
 
+Run following command in directory `./public/`
+
 ```
 $> php -S localhost:8000
 ```
