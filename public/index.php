@@ -9,7 +9,6 @@ $router = require __DIR__.'/../routes.php';
 $request = new Request();
 
 $app = new Application();
-
 $app->handle($request, $router);
 
 die;

@@ -3,6 +3,11 @@ namespace App\Controllers;
 
 class UserController extends Controller
 {
+    /**
+     * Stub for user collection
+     *
+     * @var array
+     */
     private $usersCollection = [
         1 => [
             'id'       => 1,
@@ -10,12 +15,12 @@ class UserController extends Controller
             'position' => 'Developer',
         ],
         5 => [
-            'id'       => 1,
+            'id'       => 5,
             'name'     => 'Bob',
             'position' => 'QA',
         ],
         15 => [
-            'id'       => 1,
+            'id'       => 15,
             'name'     => 'Leonora',
             'position' => 'PM',
         ],

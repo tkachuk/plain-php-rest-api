@@ -1,7 +1,7 @@
 <?php
 namespace App\Controllers;
 
-class Controller
+abstract class Controller
 {
     /**
      * @var array
@@ -21,7 +21,7 @@ class Controller
         http_response_code($code);
         header("Cache-Control: no-transform,public,max-age=300,s-maxage=900");
         header('Content-Type: application/json');
-        header('Status: '. $this->statuses[$code]);
+        header('Status: ' . $this->statuses[$code]);
         header('Content-Type: application/json');
 
         echo json_encode($data);
